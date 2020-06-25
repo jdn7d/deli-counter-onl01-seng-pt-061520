@@ -6,7 +6,7 @@ if katz_deli.length >= 1
 katz_deli.each_with_index do |name, index|
   queue << "#{index + 1}. #{name}"
 end
-puts "#{statement} #{queue.join(" , ")}"
+puts "#{statement} #{queue.join(" ")}"
 else
 puts "The line is currently empty."
 end
