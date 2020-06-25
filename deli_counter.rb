@@ -4,9 +4,9 @@ def line(katz_deli)
   statement= "The line is currently: "
 if katz_deli.length >= 1
 katz_deli.each_with_index do |name, index|
-  queue << name
+  queue << "#{name}. #{index}"
 end
-puts "#{statement} #{index + 1}. #{queue.join(" , ")}"
+puts "#{statement} #{queue.join(" , ")}"
 else
 puts "The line is currently empty."
 end
