@@ -4,7 +4,7 @@ def line(katz_deli)
   statement= "The line is currently: "
 if katz_deli.length >= 1
 katz_deli.each_with_index do |name, index|
-  queue << "#{index}. #{name}"
+  queue << "#{index + 1}. #{name}"
 end
 puts "#{statement} #{queue.join(" , ")}"
 else
